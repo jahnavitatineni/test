@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class ClassList {
 	Map<String,String> classList = new HashMap<String,String>();
-	public void classGrades() {
+	public void classList() {
 		classList.put("Bob", "A");
 		classList.put("Mary","C");
 		classList.put("Sarah","B");
@@ -25,11 +25,11 @@ public class ClassList {
 		for(Map.Entry<String, String> entry : classList.entrySet()) {
 			System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
 		}
-		//iterating over keys only
+		
 		for (String Key : classList.keySet()) {
 			System.out.println("Key = " + Key);
 		}
-		//iterating values only
+		
 		for (String value : classList.values()) {
 			System.out.println("Value = " + value);
 		}
